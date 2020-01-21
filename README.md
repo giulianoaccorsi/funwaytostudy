@@ -1,1 +1,1 @@
-# funwaytostudy
+# Fun Way to Study
