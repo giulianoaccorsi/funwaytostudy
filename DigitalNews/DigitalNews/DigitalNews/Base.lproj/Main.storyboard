@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6C-Q8-7f6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="RRs-0q-oIN">
+            <objects>
+                <tabBarController storyboardIdentifier="NewsMain" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f6C-Q8-7f6" customClass="Main" customModule="DigitalNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6hy-5M-zKf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.58039215686274503" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gt2-Ca-wdL" kind="relationship" relationship="viewControllers" id="2yD-3f-VUl"/>
+                        <segue destination="2AW-ru-rdA" kind="relationship" relationship="viewControllers" id="EHj-Fk-WJe"/>
+                        <segue destination="igh-wl-YZy" kind="relationship" relationship="viewControllers" id="OCZ-zc-XhL"/>
+                        <segue destination="raR-Yr-rZA" kind="relationship" relationship="viewControllers" id="oq0-Jr-aPY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhT-cA-55n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="-635"/>
+        </scene>
+        <!--Configuration-->
+        <scene sceneID="RFo-HI-Fa0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Configuration" id="raR-Yr-rZA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Z6I-ox-GE4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEN-MM-e4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-573"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="SdG-74-hfR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="igh-wl-YZy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="searchFilled" id="ZHR-cG-xRD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JW0-Rb-Dho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="-650"/>
+        </scene>
+        <!--FavoriteView-->
+        <scene sceneID="qOs-f4-X9p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavoriteView" id="2AW-ru-rdA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="like" selectedImage="likeFilled" id="YUL-xg-syl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAE-Qc-b16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="-609"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="72J-M8-A6R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Gt2-Ca-wdL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="homeViewBorda" selectedImage="homeFilled" id="yzD-f1-1LP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ME6-Ta-ayB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="-691"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeFilled" width="50" height="50"/>
+        <image name="homeViewBorda" width="50" height="50"/>
+        <image name="like" width="25" height="25"/>
+        <image name="likeFilled" width="25" height="25"/>
+        <image name="searchFilled" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="TableCell" customModule="GitHubChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGR-Ry-0On">
+                        <rect key="frame" x="16" y="8" width="120.5" height="120.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AGR-Ry-0On" secondAttribute="height" multiplier="1:1" id="3bB-bp-76R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7wi-Be-tkq">
+                        <rect key="frame" x="144.5" y="8" width="159.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="edt-bC-sOT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Info" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7be-8B-Jb1">
+                        <rect key="frame" x="144.5" y="38" width="159.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✪ 99,999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfX-CZ-ePs">
+                        <rect key="frame" x="144.5" y="110.5" width="66.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7wi-Be-tkq" secondAttribute="trailing" constant="16" id="5PE-aw-I0D"/>
+                    <constraint firstItem="nfX-CZ-ePs" firstAttribute="leading" secondItem="7be-8B-Jb1" secondAttribute="leading" id="Csr-Qh-bvQ"/>
+                    <constraint firstAttribute="bottom" secondItem="AGR-Ry-0On" secondAttribute="bottom" constant="8" id="DvJ-bW-jzO"/>
+                    <constraint firstItem="7be-8B-Jb1" firstAttribute="trailing" secondItem="7wi-Be-tkq" secondAttribute="trailing" id="EqW-lj-PcC"/>
+                    <constraint firstItem="7wi-Be-tkq" firstAttribute="leading" secondItem="AGR-Ry-0On" secondAttribute="trailing" constant="8" id="FEp-Rv-1OB"/>
+                    <constraint firstItem="AGR-Ry-0On" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Jz8-lC-ahj"/>
+                    <constraint firstItem="7wi-Be-tkq" firstAttribute="top" secondItem="AGR-Ry-0On" secondAttribute="top" id="KEd-yX-khF"/>
+                    <constraint firstItem="nfX-CZ-ePs" firstAttribute="bottom" secondItem="AGR-Ry-0On" secondAttribute="bottom" id="TMA-Cz-3oq"/>
+                    <constraint firstItem="7be-8B-Jb1" firstAttribute="leading" secondItem="7wi-Be-tkq" secondAttribute="leading" id="bYo-Dn-hI4"/>
+                    <constraint firstItem="AGR-Ry-0On" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qhz-1k-PUg"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nfX-CZ-ePs" secondAttribute="trailing" constant="16" id="tHf-3w-qTU"/>
+                    <constraint firstItem="7be-8B-Jb1" firstAttribute="top" secondItem="7wi-Be-tkq" secondAttribute="bottom" constant="8" id="zpe-NO-KFK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageAuthor" destination="AGR-Ry-0On" id="Sf3-sB-e3F"/>
+                <outlet property="labelAuthor" destination="7be-8B-Jb1" id="TYN-IE-wEe"/>
+                <outlet property="labelRepo" destination="7wi-Be-tkq" id="zRz-ln-0iC"/>
+                <outlet property="labelStar" destination="nfX-CZ-ePs" id="TVX-JX-E7P"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="183.81696428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
