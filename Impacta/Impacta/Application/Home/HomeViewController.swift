@@ -12,9 +12,16 @@ import WebKit
 class HomeViewController: UIViewController {
     
     let webView: WKWebView = {
-        let webView = WKWebView(frame: .zero)
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = true
+        
+        let configuration = WKWebViewConfiguration()
+        configuration.preferences = preferences
+        
+        let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.translatesAutoresizingMaskIntoConstraints = false
         webView.setNeedsLayout()
+        
         return webView
     }()
     
@@ -43,4 +50,20 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: WKUIDelegate, WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard let jsFile = Bundle.main.url(forResource: "injectCredentials", withExtension: "js") else {
+            return
+        }
+        
+        do {
+            let injectJS = try String(contentsOf: jsFile)
+            let formatted = String(format: injectJS, "1903160", "15309639")
+            webView.evaluateJavaScript(formatted) { (value, error) in
+                
+            }
+        } catch {
+            
+        }
+    }
 }

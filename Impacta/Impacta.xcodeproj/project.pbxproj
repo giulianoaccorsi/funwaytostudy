@@ -15,6 +15,7 @@
 		1989FF1D23DBF6D000E53B3F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1C23DBF6D000E53B3F /* ScheduleViewController.swift */; };
 		1989FF2023DBF85B00E53B3F /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1F23DBF85B00E53B3F /* GradesViewController.swift */; };
 		1989FF2323DBFBA900E53B3F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF2223DBFBA900E53B3F /* String.swift */; };
+		198DA59023DDD03C00EEAF6D /* injectCredentials.js in Resources */ = {isa = PBXBuildFile; fileRef = 198DA58F23DDD03C00EEAF6D /* injectCredentials.js */; };
 		19EB2B7C23D7C35400FE42D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7B23D7C35400FE42D7 /* AppDelegate.swift */; };
 		19EB2B7E23D7C35400FE42D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7D23D7C35400FE42D7 /* SceneDelegate.swift */; };
 		19EB2B8023D7C35400FE42D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7F23D7C35400FE42D7 /* HomeViewController.swift */; };
@@ -31,6 +32,7 @@
 		1989FF1C23DBF6D000E53B3F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		1989FF1F23DBF85B00E53B3F /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		1989FF2223DBFBA900E53B3F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		198DA58F23DDD03C00EEAF6D /* injectCredentials.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injectCredentials.js; sourceTree = "<group>"; };
 		19EB2B7823D7C35400FE42D7 /* Impacta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Impacta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EB2B7B23D7C35400FE42D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19EB2B7D23D7C35400FE42D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				19EB2B8923D7C35400FE42D7 /* Info.plist */,
 				1989FF2223DBFBA900E53B3F /* String.swift */,
 				1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */,
+				198DA58F23DDD03C00EEAF6D /* injectCredentials.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				19EB2B8823D7C35400FE42D7 /* LaunchScreen.storyboard in Resources */,
 				1901F42B23DD27AB0012FFCA /* teste.storyboard in Resources */,
+				198DA59023DDD03C00EEAF6D /* injectCredentials.js in Resources */,
 				19EB2B8523D7C35400FE42D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

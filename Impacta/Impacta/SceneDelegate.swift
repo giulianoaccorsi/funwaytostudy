@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.overrideUserInterfaceStyle = .light
         window?.rootViewController = UINavigationController(rootViewController: HomeTabBarController())
         window?.backgroundColor = .white
 //        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
