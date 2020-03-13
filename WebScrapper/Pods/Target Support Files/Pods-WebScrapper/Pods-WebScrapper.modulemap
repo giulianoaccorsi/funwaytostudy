@@ -1,0 +1,6 @@
+framework module Pods_WebScrapper {
+  umbrella header "Pods-WebScrapper-umbrella.h"
+
+  export *
+  module * { export * }
+}
