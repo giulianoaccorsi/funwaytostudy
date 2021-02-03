@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     let logoImpactaImage: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.contentMode = .scaleAspectFit
-        image.image = #imageLiteral(resourceName: "teste")
+        image.image = #imageLiteral(resourceName: "teste") 
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -75,10 +75,7 @@ class LoginViewController: UIViewController {
         registroAlunoTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 24).isActive = true
         registroAlunoTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -24).isActive = true
         registroAlunoTextField.topAnchor.constraint(equalTo: logoImpactaImage.bottomAnchor, constant: 100).isActive = true
-        
-        registroAlunoTextField.heightAnchor.constraint(equalToConstant: 36).isActive = true
-        
-        passwordTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 24).isActive = true
+//        registroAlunoTextField.heightAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 24).isActive = true
         passwordTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -24).isActive = true
         passwordTextField.topAnchor.constraint(equalTo: registroAlunoTextField.bottomAnchor, constant: 16).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 36).isActive = true

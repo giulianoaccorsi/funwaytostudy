@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1901F42923DCFF3C0012FFCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901F42823DCFF3C0012FFCA /* LoginViewController.swift */; };
-		1901F42B23DD27AB0012FFCA /* teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1901F42A23DD27AB0012FFCA /* teste.storyboard */; };
 		1901F42D23DD2E830012FFCA /* UIColor + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */; };
 		1901F43023DD3FB30012FFCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1901F42F23DD3FB30012FFCA /* WebKit.framework */; };
 		1989FF1A23DBF64500E53B3F /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1923DBF64500E53B3F /* HomeTabBarController.swift */; };
@@ -21,11 +20,12 @@
 		19EB2B8023D7C35400FE42D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7F23D7C35400FE42D7 /* HomeViewController.swift */; };
 		19EB2B8523D7C35400FE42D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EB2B8423D7C35400FE42D7 /* Assets.xcassets */; };
 		19EB2B8823D7C35400FE42D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EB2B8623D7C35400FE42D7 /* LaunchScreen.storyboard */; };
+		E39E019B534833F83B54D830 /* Pods_Impacta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7134523970AB5B916AF2BC6 /* Pods_Impacta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		016AED279BCBD57D4F03CF1B /* Pods-Impacta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Impacta.debug.xcconfig"; path = "Target Support Files/Pods-Impacta/Pods-Impacta.debug.xcconfig"; sourceTree = "<group>"; };
 		1901F42823DCFF3C0012FFCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1901F42A23DD27AB0012FFCA /* teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = teste.storyboard; sourceTree = "<group>"; };
 		1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Custom.swift"; sourceTree = "<group>"; };
 		1901F42F23DD3FB30012FFCA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1989FF1923DBF64500E53B3F /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		19EB2B8423D7C35400FE42D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19EB2B8723D7C35400FE42D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19EB2B8923D7C35400FE42D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B54A6091702D707961F3ACC /* Pods-Impacta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Impacta.release.xcconfig"; path = "Target Support Files/Pods-Impacta/Pods-Impacta.release.xcconfig"; sourceTree = "<group>"; };
+		E7134523970AB5B916AF2BC6 /* Pods_Impacta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Impacta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1901F43023DD3FB30012FFCA /* WebKit.framework in Frameworks */,
+				E39E019B534833F83B54D830 /* Pods_Impacta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				1901F42823DCFF3C0012FFCA /* LoginViewController.swift */,
-				1901F42A23DD27AB0012FFCA /* teste.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				1901F42F23DD3FB30012FFCA /* WebKit.framework */,
+				E7134523970AB5B916AF2BC6 /* Pods_Impacta.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 				19EB2B7A23D7C35400FE42D7 /* Impacta */,
 				19EB2B7923D7C35400FE42D7 /* Products */,
 				1901F42E23DD3FB20012FFCA /* Frameworks */,
+				4DCFE96F3822BFD85BBFA16D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +152,16 @@
 			path = Impacta;
 			sourceTree = "<group>";
 		};
+		4DCFE96F3822BFD85BBFA16D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				016AED279BCBD57D4F03CF1B /* Pods-Impacta.debug.xcconfig */,
+				2B54A6091702D707961F3ACC /* Pods-Impacta.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19EB2B8C23D7C35400FE42D7 /* Build configuration list for PBXNativeTarget "Impacta" */;
 			buildPhases = (
+				497866764DB6580F02F8E97F /* [CP] Check Pods Manifest.lock */,
 				19EB2B7423D7C35400FE42D7 /* Sources */,
 				19EB2B7523D7C35400FE42D7 /* Frameworks */,
 				19EB2B7623D7C35400FE42D7 /* Resources */,
+				8BA2D714E4F684BF3EBFD546 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,13 +223,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				19EB2B8823D7C35400FE42D7 /* LaunchScreen.storyboard in Resources */,
-				1901F42B23DD27AB0012FFCA /* teste.storyboard in Resources */,
 				198DA59023DDD03C00EEAF6D /* injectCredentials.js in Resources */,
 				19EB2B8523D7C35400FE42D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		497866764DB6580F02F8E97F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Impacta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA2D714E4F684BF3EBFD546 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Impacta/Pods-Impacta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Impacta/Pods-Impacta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Impacta/Pods-Impacta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19EB2B7423D7C35400FE42D7 /* Sources */ = {
@@ -362,6 +419,7 @@
 		};
 		19EB2B8D23D7C35400FE42D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016AED279BCBD57D4F03CF1B /* Pods-Impacta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +438,7 @@
 		};
 		19EB2B8E23D7C35400FE42D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B54A6091702D707961F3ACC /* Pods-Impacta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
