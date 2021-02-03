@@ -49,7 +49,7 @@ extension DataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: HomeViewCell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as? HomeViewCell else {return UITableViewCell()}
-//        cell.setupCell(infoMoney: InfoMoney)
+//        cell.setupCell(infoMoney: <#T##InfoMoney#>)
         return UITableViewCell()
         
     }

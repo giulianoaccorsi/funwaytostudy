@@ -47,7 +47,7 @@ extension HomeView: ViewConfiguration {
     
     func setUpConstraints() {
         stockName.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(50)
             make.centerX.equalToSuperview()
             make.height.equalTo(100)
         }
