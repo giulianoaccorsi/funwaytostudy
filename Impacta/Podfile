@@ -7,5 +7,6 @@ target 'Impacta' do
 
   # Pods for Impacta
   pod 'SwiftSoup'
+  pod 'Alamofire'
   
 end

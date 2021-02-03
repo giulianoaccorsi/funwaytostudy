@@ -7,12 +7,25 @@
 //
 
 import UIKit
-
-import UIKit
 import WebKit
-import SwiftSoup
 
 class ScheduleViewController: UIViewController {
+    let teste1 = ""
+    let teste2 = ""
+    
+    let LOGIN_JS = """
+    function login() {
+        if (document.getElementById('deslogin')[0] != null)
+            document.getElementById('deslogin')[0].value = \("1903160");
+        if (document.getElementById('dessenhalogin')[0] != null)
+            document.getElementById('dessenhalogin')[0].value = \("15309639");
+
+        if (document.getElementsByClassName('btn btn-login')[0] != null)
+                document.getElementsByClassName('btn btn-login')[0].click();
+        }
+    }
+    login();
+    """
     
     let webView: WKWebView = {
         let preferences = WKPreferences()
@@ -36,7 +49,7 @@ class ScheduleViewController: UIViewController {
     
     func setupWebView() {
         webView.navigationDelegate = self
-        if let url = URL(string: "https://account.impacta.edu.br/aluno/horario-aula.php") {
+        if let url = URL(string: "https://account.impacta.edu.br/") {
             webView.load(URLRequest(url: url))
         }else {
             print("faio")
@@ -55,7 +68,7 @@ class ScheduleViewController: UIViewController {
 extension ScheduleViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        guard let jsFile = Bundle.main.url(forResource: "injectCredentials", withExtension: "js") else {
+        guard let jsFile = Bundle.main.url(forResource: "Login", withExtension: "js") else {
             return
         }
         
@@ -63,11 +76,10 @@ extension ScheduleViewController: WKUIDelegate, WKNavigationDelegate {
             let injectJS = try String(contentsOf: jsFile)
             let formatted = String(format: injectJS, "1903160", "15309639")
             webView.evaluateJavaScript(formatted) { (value, error) in
-                
+                print(error)
             }
         } catch {
             
         }
     }
 }
-

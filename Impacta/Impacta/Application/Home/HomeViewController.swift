@@ -52,7 +52,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        guard let jsFile = Bundle.main.url(forResource: "injectCredentials", withExtension: "js") else {
+        guard let jsFile = Bundle.main.url(forResource: "Login", withExtension: "js") else {
             return
         }
         

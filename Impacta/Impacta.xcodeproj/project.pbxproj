@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1901F42923DCFF3C0012FFCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901F42823DCFF3C0012FFCA /* LoginViewController.swift */; };
 		1901F42D23DD2E830012FFCA /* UIColor + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */; };
 		1901F43023DD3FB30012FFCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1901F42F23DD3FB30012FFCA /* WebKit.framework */; };
+		197FC96725CA2D7F005A43A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC96625CA2D7F005A43A2 /* NetworkService.swift */; };
+		197FC96B25CA2D86005A43A2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC96A25CA2D86005A43A2 /* ParseManager.swift */; };
 		1989FF1A23DBF64500E53B3F /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1923DBF64500E53B3F /* HomeTabBarController.swift */; };
 		1989FF1D23DBF6D000E53B3F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1C23DBF6D000E53B3F /* ScheduleViewController.swift */; };
 		1989FF2023DBF85B00E53B3F /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF1F23DBF85B00E53B3F /* GradesViewController.swift */; };
 		1989FF2323DBFBA900E53B3F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989FF2223DBFBA900E53B3F /* String.swift */; };
 		198DA59023DDD03C00EEAF6D /* injectCredentials.js in Resources */ = {isa = PBXBuildFile; fileRef = 198DA58F23DDD03C00EEAF6D /* injectCredentials.js */; };
+		19B0855E25CAFC1F00F2E58A /* Login.js in Resources */ = {isa = PBXBuildFile; fileRef = 19B0855D25CAFC1F00F2E58A /* Login.js */; };
 		19EB2B7C23D7C35400FE42D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7B23D7C35400FE42D7 /* AppDelegate.swift */; };
 		19EB2B7E23D7C35400FE42D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7D23D7C35400FE42D7 /* SceneDelegate.swift */; };
 		19EB2B8023D7C35400FE42D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EB2B7F23D7C35400FE42D7 /* HomeViewController.swift */; };
@@ -28,11 +31,14 @@
 		1901F42823DCFF3C0012FFCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Custom.swift"; sourceTree = "<group>"; };
 		1901F42F23DD3FB30012FFCA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		197FC96625CA2D7F005A43A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		197FC96A25CA2D86005A43A2 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
 		1989FF1923DBF64500E53B3F /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		1989FF1C23DBF6D000E53B3F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		1989FF1F23DBF85B00E53B3F /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		1989FF2223DBFBA900E53B3F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		198DA58F23DDD03C00EEAF6D /* injectCredentials.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injectCredentials.js; sourceTree = "<group>"; };
+		19B0855D25CAFC1F00F2E58A /* Login.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Login.js; sourceTree = "<group>"; };
 		19EB2B7823D7C35400FE42D7 /* Impacta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Impacta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EB2B7B23D7C35400FE42D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19EB2B7D23D7C35400FE42D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		197FC96525CA2D50005A43A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				197FC96625CA2D7F005A43A2 /* NetworkService.swift */,
+				197FC96A25CA2D86005A43A2 /* ParseManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1989FF1423DBF45E00E53B3F /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +119,7 @@
 				1989FF2223DBFBA900E53B3F /* String.swift */,
 				1901F42C23DD2E830012FFCA /* UIColor + Custom.swift */,
 				198DA58F23DDD03C00EEAF6D /* injectCredentials.js */,
+				19B0855D25CAFC1F00F2E58A /* Login.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 		19EB2B7A23D7C35400FE42D7 /* Impacta */ = {
 			isa = PBXGroup;
 			children = (
+				197FC96525CA2D50005A43A2 /* Network */,
 				1989FF1423DBF45E00E53B3F /* Application */,
 				19EB2B7B23D7C35400FE42D7 /* AppDelegate.swift */,
 				19EB2B7D23D7C35400FE42D7 /* SceneDelegate.swift */,
@@ -158,7 +175,6 @@
 				016AED279BCBD57D4F03CF1B /* Pods-Impacta.debug.xcconfig */,
 				2B54A6091702D707961F3ACC /* Pods-Impacta.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B0855E25CAFC1F00F2E58A /* Login.js in Resources */,
 				19EB2B8823D7C35400FE42D7 /* LaunchScreen.storyboard in Resources */,
 				198DA59023DDD03C00EEAF6D /* injectCredentials.js in Resources */,
 				19EB2B8523D7C35400FE42D7 /* Assets.xcassets in Resources */,
@@ -277,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197FC96725CA2D7F005A43A2 /* NetworkService.swift in Sources */,
 				1989FF2023DBF85B00E53B3F /* GradesViewController.swift in Sources */,
 				1989FF1D23DBF6D000E53B3F /* ScheduleViewController.swift in Sources */,
 				19EB2B8023D7C35400FE42D7 /* HomeViewController.swift in Sources */,
@@ -286,6 +304,7 @@
 				1989FF1A23DBF64500E53B3F /* HomeTabBarController.swift in Sources */,
 				19EB2B7E23D7C35400FE42D7 /* SceneDelegate.swift in Sources */,
 				1901F42D23DD2E830012FFCA /* UIColor + Custom.swift in Sources */,
+				197FC96B25CA2D86005A43A2 /* ParseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
