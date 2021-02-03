@@ -26,19 +26,8 @@ class HomeController {
         self.parseManager = parseManager
     }
     
-//    func makeInfoMoney() -> InfoMoney {
-//        let array:[String] = parseManager.parseHTML()
-//        return InfoMoney(name: "",
-//                         nameStock: "",
-//                         time: "",
-//                         fechamentoAnterior: array[ArrayRow.fechamentoAnterior.rawValue],
-//                         abertura: array[ArrayRow.abertura.rawValue],
-//                         quantidade: array[ArrayRow.quantidade.rawValue],
-//                         volume: array[ArrayRow.volume.rawValue],
-//                         minMax: array[ArrayRow.minMax.rawValue],
-//                         dayVariation: array[ArrayRow.variationDay.rawValue],
-//                         monthVariation: array[ArrayRow.variationMonth.rawValue],
-//                         yearVariation: array[ArrayRow.variationYear.rawValue],
-//                         twelveMonhts: array[ArrayRow.twelveWeeks.rawValue])
-//    }
+    func makeInfoMoney() -> Void {
+        let array:[String] = parseManager.parseHTML()
+        parseManager.parseHTML()
+    }
 }

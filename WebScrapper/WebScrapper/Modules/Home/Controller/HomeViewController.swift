@@ -30,6 +30,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.view = HomeView()
         
-//        controller.makeInfoMoney()
+        controller.makeInfoMoney()
     }
 }
